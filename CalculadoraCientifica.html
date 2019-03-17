@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Jorge Álvarez Fidalgo, UO258524">
+<title>Calculadora Científica</title>
+<link rel="stylesheet" href="CalculadoraCientifica.css"/>
+<script src="CalculadoraCientifica.js"></script>  
+</head>
+<body>
+<h1>Calculadora Científica</h1>    
+<div>
+<input type="text" id="display" disabled />
+<input type="button" value="mc" id="iniciofila1" onclick="cal.borrarMemoria()" />
+<input type="button" value="mr" onclick="cal.mostrarMemoria()" />
+<input type="button" value="m+" onclick="cal.operarMemoria(' + ')" />
+<input type="button" value="m-" onclick="cal.operarMemoria(' - ')" />
+<input type="button" value="ms" onclick="cal.guardarMemoria()" />
+<input type="button" value="x²" id="iniciofila2" onclick="cal.calcularPotencia(2)" />
+<input type="button" value="xʸ" id="poty" onclick="cal.introducirOperacion(' ** ')" />
+<input type="button" value="sin" id="sin" onclick="cal.calcularSeno()" />
+<input type="button" value="cos" id="cos" onclick="cal.calcularCoseno()" />
+<input type="button" value="tan" id="tan" onclick="cal.calcularTangente()" />
+<input type="button" value="√" id="iniciofila3" onclick="cal.calcularRaiz()" />
+<input type="button" value="10ˣ" id="10x" onclick="cal.calcularPotenciaBase10()" />
+<input type="button" value="log" id="log" onclick="cal.calcularLogaritmoBase10()" />
+<input type="button" value="exp" onclick="cal.introducirOperacion(' * 10 **  ')" />
+<input type="button" value="Mod" onclick="cal.introducirOperacion(' % ')" />
+<input type="button" value="↑" id="iniciofila4" onclick="cal.cambiarBotones()" />
+<input type="button" value="CE" onclick="cal.eliminarUltimoValor()" />
+<input type="button" value="C" onclick="cal.limpiar()" />
+<input type="button" value="<x|" onclick="cal.borrar()" />
+<input type="button" value="/" onclick="cal.introducirOperacion(' / ')" />
+<input type="button" value="π" id="iniciofila5" onclick="cal.calcularPi()" />
+<input type="button" value="7" onclick="cal.introducirDigito(7)" />
+<input type="button" value="8" onclick="cal.introducirDigito(8)" />
+<input type="button" value="9" onclick="cal.introducirDigito(9)" />
+<input type="button" value="*" onclick="cal.introducirOperacion(' * ')" />
+<input type="button" value="n!" id="iniciofila6" onclick="cal.calcularFactorial()" />
+<input type="button" value="4" onclick="cal.introducirDigito(4)" />
+<input type="button" value="5" onclick="cal.introducirDigito(5)" />
+<input type="button" value="6" onclick="cal.introducirDigito(6)" />
+<input type="button" value="-" onclick="cal.introducirOperacion(' - ')" />
+<input type="button" value="±" id="iniciofila7" onclick="cal.cambiarSigno()" />
+<input type="button" value="1" onclick="cal.introducirDigito(1)" />
+<input type="button" value="2" onclick="cal.introducirDigito(2)" />
+<input type="button" value="3" onclick="cal.introducirDigito(3)" />
+<input type="button" value="+" onclick="cal.introducirOperacion(' + ')" />
+<input type="button" value="(" id="iniciofila8" onclick="cal.introducirDigito('( ')" />
+<input type="button" value=")" onclick="cal.introducirOperacion(' )')" />
+<input type="button" value="0" onclick="cal.introducirDigito(0)" />
+<input type="button" value="." onclick="cal.introducirDigito('.')" />
+<input type="button" value="=" onclick="cal.calcular()" />
+</div>
+<footer>
+<a href="https://validator.w3.org/check?uri=referer">
+    <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="¡HTML5 válido!" height="64" width="63" /></a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!" /></a>
+</footer>
+</body>
+</html>

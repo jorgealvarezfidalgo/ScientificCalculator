@@ -1,0 +1,60 @@
+/*Especificidad = 001*/body {
+	color: #000;
+	background-color: azure;
+}
+
+/*Especificidad = 001*/h1 {
+	  color: #000;
+	  background-color: azure;
+	  font-family: "Times New Roman", serif;
+      text-transform: uppercase;
+      padding: 2em 1.2em;
+      font-size: 1.8em;
+      margin: 0.8em;
+	  text-align: center; 
+	  font-weight:bold;
+	  font-size-adjust: 0.5;
+	  border-bottom-style: double;
+  }
+	
+/*Especificidad = 001*/input {
+    float: left;
+}
+
+/*Especificidad = 011*/input[id ^= "iniciofila"] {
+    clear:left;
+}
+
+/*Especificidad = 022*/input[type="button"] {
+    padding: 0.5em;
+    width: 5em;
+
+}
+
+/*Especificidad = 011*/input[id="display"]{
+
+    padding: 0.5em;
+    width: 24em;
+    margin-bottom: 2em;
+	border-style: ridge;
+}
+
+/*Especificidad = 001*/div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 21em;
+	color: #fff;
+	background-color: #000;
+	height: 22em;
+	padding: 0.5em;
+	border-style: groove;
+}
+
+/*Especificidad = 001*/footer {
+    float: right;
+    clear: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
